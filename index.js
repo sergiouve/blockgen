@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var fs = require('fs');
 var eol = require('os').EOL;
 var program = require('commander');
