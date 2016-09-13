@@ -1,22 +1,22 @@
 {
-  "name": "blockgen",
-  "version": "0.0.1",
-  "description": "CLI tool for quick Fishh blocks bootstrapping",
-  "main": "index.js",
-  "scripts": {
-    "test": "blockgen"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sergiouve/blockgen.git"
-  },
-  "author": "sergiouve <sergiouve@gmail.com> (https://github.com/sergiouve/)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/sergiouve/blockgen/issues"
-  },
-  "homepage": "https://github.com/sergiouve/blockgen#readme",
-  "dependencies": {
-    "commander": "^2.9.0"
-  }
+    "name": "blockgen",
+    "version": "0.0.1",
+    "description": "CLI tool for quick Fishh blocks bootstrapping",
+    "main": "index.js",
+    "scripts": {
+        "test": "blockgen"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sergiouve/blockgen.git"
+    },
+    "author": "sergiouve <sergiouve@gmail.com> (https://github.com/sergiouve/)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/sergiouve/blockgen/issues"
+    },
+    "homepage": "https://github.com/sergiouve/blockgen#readme",
+    "dependencies": {
+        "commander": "^2.9.0"
+    }
 }

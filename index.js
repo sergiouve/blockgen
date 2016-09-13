@@ -1,7 +1,6 @@
 // TODO -> check if folder already exists
 
 var fs = require('fs');
-var tg = require('./lib/tree-generator');
 var eol = require('os').EOL;
 var program = require('commander');
 
@@ -9,11 +8,11 @@ program
     .option('-f, --folder <blocks_folder>', 'Relative path to blocks folder')
     .parse(process.argv);
 
-var blocks_folder = program.blocksFolder;
+var blocks_folder = program.folder;
 var blockConfig = JSON.parse(fs.readFileSync('block.conf', 'utf8'));
 var block_name = blockConfig['block-id'];
 
-if (blocks_folder == '') {
+if (typeof blocks_folder == 'undefined') {
     blocks_folder = '.';
 }
 
@@ -111,7 +110,6 @@ var populateTemplateFile = function(block_name, blockConfigObject) {
     final_file_content = template_file_template_ini + template_file_content + template_file_template_end;
     fs.writeFile(block_name + '/block-form.template', final_file_content);
 }
-
 
 generateBlockFileTree(block_name);
 populateBlockConfigFile(block_name);
