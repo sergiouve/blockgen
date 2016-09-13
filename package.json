@@ -1,6 +1,6 @@
 {
     "name": "blockgen",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "CLI tool for quick Fishh blocks bootstrapping",
     "main": "index.js",
     "bin": {
