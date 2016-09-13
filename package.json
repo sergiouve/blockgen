@@ -3,6 +3,9 @@
     "version": "0.0.1",
     "description": "CLI tool for quick Fishh blocks bootstrapping",
     "main": "index.js",
+    "bin": {
+        "blockgen": "./index.js"
+    },
     "scripts": {
         "test": "blockgen"
     },
