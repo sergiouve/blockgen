@@ -1,5 +1,3 @@
-// TODO -> check if folder already exists
-
 var fs = require('fs');
 var eol = require('os').EOL;
 var program = require('commander');

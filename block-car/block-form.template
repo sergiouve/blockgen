@@ -1,0 +1,8 @@
+<div class="row-fluid">
+{{label:image-cover}}{{field:image-cover}}{{help:image-cover}}
+{{label:images-slider}}{{field:images-slider}}{{help:images-slider}}
+{{label:subtitle}}{{field:subtitle}}{{help:subtitle}}
+{{label:description}}{{field:description}}{{help:description}}
+{{label:amenities_title}}{{field:amenities_title}}{{help:amenities_title}}
+{{label:amenities}}{{field:amenities}}{{help:amenities}}
+</div>
