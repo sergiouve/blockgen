@@ -1,3 +1,4 @@
 node_modules/
 block.conf
 block-car/
+examples/block-*
