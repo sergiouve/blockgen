@@ -32,10 +32,11 @@ var populateBlockConfigFile = function(block_name) {
 var populateBlockLangFile = function(block_name, blockConfigObject) {
     var widgetsObject = blockConfigObject['widgets'];
     var block_desc = blockConfigObject['block-id'].toUpperCase();
+    var block_title = blockConfigObject['block-name'];
 
     var lang_file_template_ini = '<?php' + eol + eol +
-        '$block_specific_lang_ed = array("desc" => "' + block_desc + '", "txt" => array(' + eol + eol;
-
+        '$block_specific_lang_ed = array("desc" => "' + block_desc + '", "txt" => array(' + eol + eol +
+        '"' + block_title + '"' + ' => "",' + eol + eol;
     var lang_file_template_end = '));' + eol + eol +
         '$block_specific_lang = $block_specific_lang_ed["txt"];' + eol +
         'unset($block_specific_lang_ed);' + eol;
@@ -66,10 +67,11 @@ var populateBlockLangFile = function(block_name, blockConfigObject) {
 var populateSetupFile = function(block_name, blockConfigObject) {
     var widgetsObject = blockConfigObject['widgets'];
     var block_desc = blockConfigObject['block-id'].toUpperCase();
+    var block_title = blockConfigObject['block-name'];
 
     var setup_file_template_ini = '<?php' + eol + eol +
-        '$block_lang = array(' + eol + eol;
-
+        '$block_lang = array(' + eol + eol + '"' + block_title + '" => $block_specific_lang["' + block_title +
+        '"],' + eol + eol;
     var setup_file_template_end = ');' + eol + eol;
     var setup_file_content = '';
     var final_file_content = '';
