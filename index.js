@@ -4,6 +4,7 @@ var fs = require('fs');
 var eol = require('os').EOL;
 var program = require('commander');
 
+
 program
     .option('-f, --folder <blocks_folder>', 'Relative path to blocks folder')
     .parse(process.argv);
